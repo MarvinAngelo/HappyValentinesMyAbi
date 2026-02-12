@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Folder Configuration (Based on your provided folder structure)
     const folderConfig = {
-        museum_date: 11,
+        museum_date: 10,
         movie_date_weapons: 5,
         gelo_birthday_date: 4,
         moa_date: 7,
