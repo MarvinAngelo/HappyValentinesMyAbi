@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="floating-hearts-container" id="floatingHearts"></div>
+    
+    <!-- Music Control (Initially Hidden) -->
+    <div class="music-control hidden" id="musicControlContainer">
+        <button id="musicToggle" class="music-btn" aria-label="Toggle Music">
+            <i class="fas fa-volume-mute"></i>
+        </button>
+        <!-- Replace src with your romantic music file -->
+        <audio id="bgMusic" loop>
+            <source src="public/music/The%20Beatles%20-%20Here,%20There%20and%20Everywhere.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <h1 class="title fade-in">Will you be my Valentine and eat at Dookki with me, my Abi? 🥺</h1>
+            <div class="gif-container fade-in delay-1">
+                <!-- Cute gif placeholder - you can replace with a specific one you like -->
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMDF4OGJyeXp4Z3MzM3hyYW50b3d4Z3MzM3hyYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Cute Bear" class="cute-gif">
+            </div>
+            <div class="buttons fade-in delay-2">
+                <button id="yesBtn" class="btn yes-btn">Yes 💖</button>
+                <button id="noBtn" class="btn no-btn">No 💔</button>
+            </div>
+            <div id="successMessage" class="hidden">
+                <h1 class="success-title">Yay!! You just made me the happiest person ever Jo! ❤️</h1>
+                <p class="success-subtitle">I love you so much po!</p>
+                <div class="success-gif-container">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXZ1OTZxcnl3ZGNoaWU3OGNzd3AybGQ4Zml6YW5udzh0NmN4NG53ciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/x28cIQSn19Tbi/giphy.gif" alt="Happy Celebration" class="success-gif">
+                </div>
+                <button id="memoryLaneBtn" class="btn memory-btn hidden">Trip to Memory Lane 💌</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Memory Lane Section -->
+    <div id="memoryLane" class="memory-lane hidden">
+        <div class="timeline-container">
+            <!-- Content will be injected dynamically via JS -->
+        </div>
+        
+        <div class="restart-container">
+            <h2 class="final-message">Thank you for accepting to be my Valentine my love</h2>
+            <button id="restartBtn" class="btn restart-btn">Start From The Beginning 🔄</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
